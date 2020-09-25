@@ -56,11 +56,13 @@
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierFlightsClimbed];
     }else if ([@"NikeFuel" isEqualToString: key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierNikeFuel];
+    }else if ([@"DistanceSwimming" isEqualToString: key]) {
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceSwimming];
     }
     
-//    if ([@"AppleExerciseTime" isEqualToString: key]) {
-//        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierAppleExerciseTime];
-//    }
+    if ([@"AppleExerciseTime" isEqualToString: key]) {
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierAppleExerciseTime];
+    }
     
     // Nutrition Identifiers
     if ([@"DietaryEnergy" isEqualToString: key]) {
