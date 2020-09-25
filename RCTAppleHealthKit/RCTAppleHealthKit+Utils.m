@@ -136,7 +136,7 @@
     } else if ([type isEqual:@"Swimming"]){
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceSwimming];
     }
-    else if ([type isEqual:@"ExerciseMin"]){
+    else if ([type isEqual:@"ExerciseMins"]){
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierAppleExerciseTime];
     }
     // default [type isEqual:@"Workout"])
