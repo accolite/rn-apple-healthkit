@@ -52,7 +52,7 @@
 {
     NSString *type = [RCTAppleHealthKit stringFromOptions:input key:@"type" withDefault:@"Walking"];
 
-    if ([type isEqual:@"ExerciseMin"]){
+    if ([type isEqual:@"ExerciseMins"]){
         [self activity_getExerciseMin:input callback:callback];
     } else {
     HKUnit *unit = [RCTAppleHealthKit hkUnitFromOptions:input key:@"unit" withDefault:[HKUnit countUnit]];
